@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Editar Produto</title>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h1>Editar Produto</h1>
+
+        <form id="formEditarProduto">
+            <div class="mb-3">
+                <label for="id" class="form-label">ID</label>
+                <input type="text" class="form-control" id="id" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="preco" class="form-label">Preço</label>
+                <input type="number" step="0.01" class="form-control" id="preco" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="quantidade" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            <a href="produtos.html" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+
+    <script src="produtoEditar.js"></script>
+</body>
+</html>

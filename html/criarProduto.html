@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <title>Cadastrar Produto</title>
+
+</head>
+
+<body>
+
+    <div class="container mt-4">
+
+        <h1>Cadastrar Produto</h1>
+
+        <form id="form-produto">
+
+            <div class="form-group">
+
+                <label for="produto_nome">Nome do produto</label>
+                <input type="text" class="form-control" id="produto_nome"
+                placeholder="Digite o nome do produto..." required>
+
+                <label for="produto_preco">Preço</label>
+                <input type="number" step="0.01" class="form-control" id="produto_preco"
+                placeholder="Digite o preço..." required>
+
+                <label for="produto_quantidade">Quantidade</label>
+                <input type="number" class="form-control" id="produto_quantidade"
+                placeholder="Digite a quantidade..." required>
+
+            </div>
+
+            <button type="button" class="btn btn-primary mt-3"
+            onclick="criarProduto()">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="criarProduto.js"></script>
+
+</body>
+
+</html>
